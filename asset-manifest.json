@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ShowHub/static/css/main.ed7c9438.css",
+    "main.js": "/ShowHub/static/js/main.95124738.js",
+    "static/media/gay-watching-movie-5365080-4491740 (1) 1.png": "/ShowHub/static/media/gay-watching-movie-5365080-4491740 (1) 1.79fa8d638e26c2802956.png",
+    "index.html": "/ShowHub/index.html",
+    "main.ed7c9438.css.map": "/ShowHub/static/css/main.ed7c9438.css.map",
+    "main.95124738.js.map": "/ShowHub/static/js/main.95124738.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed7c9438.css",
+    "static/js/main.95124738.js"
+  ]
+}
