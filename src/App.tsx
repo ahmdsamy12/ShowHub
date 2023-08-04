@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Layout from './Layout/Layout';
+import HeaderApp from './components/HeaderApp/HeaderApp';
+import Home from './pages/Home/Home';
+import {
+  createHashRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import TopMovies from './pages/TopMovies/TopMovies';
+import PopularMovies from './pages/PopularMovies/PopularMovies';
+import UpComingMovies from './pages/UpComingMovies/UpComingMovies';
+
+const router = createHashRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/top" element={<TopMovies />} />
+      <Route path="/pop" element={<PopularMovies />} />
+      <Route path="/up" element={<UpComingMovies />} />
+    </Route>
+  )
+);
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <RouterProvider router={router} />
     </div>
   );
 }
